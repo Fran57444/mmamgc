@@ -70,6 +70,7 @@ export function initMusicPlayer() {
     const editInputArtist = document.getElementById("edit-input-artist");
     const editInputColor = document.getElementById("edit-input-color");
     const editInputMp3 = document.getElementById("edit-input-mp3");
+    const editInputFileName = document.getElementById("edit-input-file-name");
     const editInputLyrics = document.getElementById("edit-input-lyrics");
     const btnSaveEditedSong = document.getElementById("btn-save-edited-song");
     const btnCancelEditedSong = document.getElementById("btn-cancel-edited-song");
@@ -164,6 +165,23 @@ export function initMusicPlayer() {
     }
     const API_URL = import.meta.env.VITE_API_URL || '/api';
 
+    async function fetchJsonWithRetry(url, options = {}, attempts = 5) {
+        let lastError;
+        for (let attempt = 0; attempt < attempts; attempt += 1) {
+            try {
+                const response = await fetch(url, options);
+                if (!response.ok) throw new Error(`API respondió con ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                lastError = error;
+                if (attempt < attempts - 1) {
+                    await new Promise(resolve => setTimeout(resolve, 300));
+                }
+            }
+        }
+        throw lastError;
+    }
+
     function getContrastTextColor(hexColor) {
         if (!hexColor) return '#ffffff';
         let hex = hexColor.replace('#', '').trim();
@@ -220,8 +238,7 @@ export function initMusicPlayer() {
 
     async function loadPlaylists() {
         try {
-            const res = await fetch(`${API_URL}/playlists`);
-            userPlaylists = await res.json();
+            userPlaylists = await fetchJsonWithRetry(`${API_URL}/playlists`);
             renderSidebarPlaylists();
         } catch (e) {
             console.warn(e);
@@ -318,8 +335,7 @@ export function initMusicPlayer() {
         if (perroGif) perroGif.style.display = 'none';
 
         try {
-            const res = await fetch(`${API_URL}/songs`);
-            const data = await res.json();
+            const data = await fetchJsonWithRetry(`${API_URL}/songs`);
             playlist = data.songs || [];
         } catch (e) {
             console.warn(e);
@@ -1021,6 +1037,7 @@ export function initMusicPlayer() {
         }
 
         editInputMp3.value = "";
+        if (editInputFileName) editInputFileName.value = "";
         editSongPhoto.value = "";
         if (editInputYt) editInputYt.value = "";
 
@@ -1072,6 +1089,9 @@ export function initMusicPlayer() {
         formData.append('artist', editInputArtist.value.trim() || 'Artista Desconocido');
         formData.append('color', editInputColor.value);
         formData.append('lyrics', editInputLyrics.value);
+        if (editInputFileName?.value.trim()) {
+            formData.append('fileName', editInputFileName.value.trim());
+        }
 
         if (editInputMp3.files && editInputMp3.files[0]) {
             formData.append('mp3', editInputMp3.files[0]);

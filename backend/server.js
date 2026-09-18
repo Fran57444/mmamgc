@@ -120,6 +120,17 @@ async function saveMp3Locally(title, buffer, requestedName = '') {
   return { fileName, filePath: `/mp3/${fileName}` };
 }
 
+function sanitizeAudioFileName(requestedName, fallbackName, extension = '.mp3') {
+  const safeName = (requestedName || fallbackName || 'audio')
+    .replace(/\.[a-z0-9]+$/i, '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-zA-Z0-9._-]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 100) || 'audio';
+  return `${safeName}${extension}`;
+}
+
 function extractDriveId(url) {
   if (!url) return url;
   const match = url.match(/[-\w]{25,}/);
@@ -188,7 +199,7 @@ async function downloadWithYtDlp(ytLink) {
   const temporaryInput = path.join(temporaryDirectory, `youtube-${Date.now()}.%(ext)s`);
 
   try {
-    const output = await youtubedl(ytLink, {
+    const ytDlpOptions = {
       output: temporaryInput,
       format: 'bestaudio[abr<=128]/bestaudio[ext=m4a]/bestaudio/best',
       concurrentFragments: 8,
@@ -198,7 +209,13 @@ async function downloadWithYtDlp(ytLink) {
       noCheckCertificates: true,
       print: 'after_move:%(title)s',
       addHeader: 'referer:https://www.youtube.com/'
-    });
+    };
+
+    if (process.env.YOUTUBE_COOKIES_FILE) {
+      ytDlpOptions.cookiefile = process.env.YOUTUBE_COOKIES_FILE;
+    }
+
+    const output = await youtubedl(ytLink, ytDlpOptions);
 
     const downloadedFiles = await fs.promises.readdir(temporaryDirectory);
     const inputFileName = downloadedFiles
@@ -238,6 +255,9 @@ async function downloadYoutubeAudio(ytLink) {
     };
     } catch (fallbackError) {
       const message = fallbackError?.message || 'El enlace no pudo ser procesado por YouTube.';
+      if (/429|too many requests|rate limit/i.test(`${ytDlpError.message} ${message}`)) {
+        throw new Error('YouTube rechazó temporalmente la descarga (429). Espera unos minutos o configura YOUTUBE_COOKIES_FILE con cookies del navegador.');
+      }
       throw new Error(message);
     }
   }
@@ -279,13 +299,20 @@ app.post('/api/songs', upload.fields([{ name: 'mp3' }, { name: 'cover' }]), asyn
 
       const fileObject = {
         buffer,
-        originalname: (title || 'Cancion_YT') + '.mp3',
+        originalname: sanitizeAudioFileName(req.body.fileName, title || 'Cancion_YT'),
         mimetype: 'audio/mpeg'
       };
       pathUrl = await uploadToDrive(fileObject);
     } else if (req.files['mp3']) {
-      // Si subió un archivo normal
-      pathUrl = await uploadToDrive(req.files['mp3'][0]);
+      const uploadedFile = req.files['mp3'][0];
+      if (req.body.fileName) {
+        uploadedFile.originalname = sanitizeAudioFileName(
+          req.body.fileName,
+          uploadedFile.originalname,
+          path.extname(uploadedFile.originalname) || '.mp3'
+        );
+      }
+      pathUrl = await uploadToDrive(uploadedFile);
     }
 
     if (req.files['cover']) coverUrl = await uploadToDrive(req.files['cover'][0]);

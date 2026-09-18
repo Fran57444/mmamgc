@@ -73,7 +73,7 @@ function App() {
         
         <div id="all-songs-panel" className="view-panel">
           <div className="view-header-bar">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+            <div style={{ display: 'flex', alignItems: 'left', gap: '15px' }}>
               <h2>lista completa canciones</h2>
             </div>
             <button id="btn-play-all-songs" className="main-play-btn">
@@ -225,7 +225,7 @@ function App() {
                   <input type="color" id="edit-input-color" />
                 </div>
                 <div className="field-row">
-                  <label>MP3 O LINK DE YOUTUBE</label>
+                  <label>PISTA DE AUDIO</label>
                   <input type="file" id="edit-input-mp3" accept="audio/*" />
                   <input type="text" id="edit-input-yt" placeholder="O ingresa el link de YouTube aquí..." style={{ 
                     background: 'rgba(255,255,255,0.05)', 
@@ -237,6 +237,22 @@ function App() {
                     outline: 'none',
                     marginTop: '5px'
                   }} />
+                  <input
+                    type="text"
+                    id="edit-input-file-name"
+                    placeholder="Nombre del archivo MP3 (opcional)"
+                    maxLength="80"
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      padding: '12px 15px',
+                      color: '#fff',
+                      borderRadius: '8px',
+                      fontSize: '1rem',
+                      outline: 'none',
+                      marginTop: '8px'
+                    }}
+                  />
                 </div>
               </div>
             </div>
