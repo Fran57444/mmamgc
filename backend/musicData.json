@@ -1,0 +1,886 @@
+{
+  "songs": [
+    {
+      "id": 0,
+      "path": "/mp3/vinculo.mp3",
+      "name": "Vínculo",
+      "artist": "Enjambre",
+      "cover": "/img/vinculo.png",
+      "color": "#263cb6",
+      "lyrics": "olaprueba"
+    },
+    {
+      "id": 1,
+      "path": "/mp3/thespellofmathematics.mp3",
+      "name": "The Spell of Mathematics",
+      "artist": "Deftones",
+      "cover": "/img/ohms.png",
+      "color": "#4d4d4d",
+      "lyrics": ""
+    },
+    {
+      "id": 2,
+      "path": "/mp3/fs.mp3",
+      "name": "Fallen Star",
+      "artist": "The Neighbourhood",
+      "cover": "/img/fallenstar.png",
+      "color": "#dfb600ff",
+      "lyrics": ""
+    },
+    {
+      "id": 3,
+      "path": "/mp3/bp.mp3",
+      "name": "Body Paint",
+      "artist": "Arctic Monkeys",
+      "cover": "/img/thecar.png",
+      "color": "#eed88eff",
+      "lyrics": ""
+    },
+    {
+      "id": 4,
+      "path": "/mp3/souvenir.mp3",
+      "name": "souvenir",
+      "artist": "Deftones",
+      "cover": "/img/privatemusic.png",
+      "color": "#00e01e",
+      "lyrics": ""
+    },
+    {
+      "id": 5,
+      "path": "/mp3/baileinolvidable.mp3",
+      "name": "BAILE INoLVIDABLE",
+      "artist": "Bad Bunny",
+      "cover": "/img/debitirarmasfotos.jpg",
+      "color": "#417900",
+      "lyrics": ""
+    },
+    {
+      "id": 6,
+      "path": "/mp3/cdll.mp3",
+      "name": "Ciencia de la Lluvia",
+      "artist": "Enjambre",
+      "cover": "/img/daltonico.jpg",
+      "color": "#e09200",
+      "lyrics": ""
+    },
+    {
+      "id": 7,
+      "path": "/mp3/tpwhitb.mp3",
+      "name": "The Place Where He Inserted the Blade",
+      "artist": "Black Country, New Road",
+      "cover": "/img/antsfromupthere.png",
+      "color": "#ddac52",
+      "lyrics": ""
+    },
+    {
+      "id": 8,
+      "path": "/mp3/metaldream.mp3",
+      "name": "~metal dream",
+      "artist": "Deftones",
+      "cover": "/img/privatemusic.png",
+      "color": "#00e01e",
+      "lyrics": ""
+    },
+    {
+      "id": 9,
+      "path": "/mp3/dtb.mp3",
+      "name": "departing the body",
+      "artist": "Deftones",
+      "cover": "/img/privatemusic.png",
+      "color": "#00e01e",
+      "lyrics": ""
+    },
+    {
+      "id": 10,
+      "path": "/mp3/ygsh.mp3",
+      "name": "You Get Me So High",
+      "artist": "The Neighbourhood",
+      "cover": "/img/htitnec.png",
+      "color": "#b9a79c",
+      "lyrics": ""
+    },
+    {
+      "id": 11,
+      "path": "/mp3/nok.mp3",
+      "name": "No One Knows (with Laufey)",
+      "artist": "Stephen Sanchez, Laufey",
+      "cover": "/img/angelface.png",
+      "color": "#a6452a",
+      "lyrics": ""
+    },
+    {
+      "id": 12,
+      "path": "/mp3/atwci.mp3",
+      "name": "As the World Caves In",
+      "artist": "Matt Maltese",
+      "cover": "/img/atwci.png",
+      "color": "#c52222ff",
+      "lyrics": ""
+    },
+    {
+      "id": 13,
+      "path": "/mp3/halflife.mp3",
+      "name": "Half Life",
+      "artist": "Djo",
+      "cover": "/img/decide.png",
+      "color": "#2e5099ff",
+      "lyrics": ""
+    },
+    {
+      "id": 14,
+      "path": "/mp3/jmid.mp3",
+      "name": "Join Me In Death",
+      "artist": "HIM",
+      "cover": "/img/razorbladeromance.png",
+      "color": "#d9427b",
+      "lyrics": ""
+    },
+    {
+      "id": 15,
+      "path": "/mp3/sf.mp3",
+      "name": "Siesta Freestyle",
+      "artist": "Lewis OfMan, Alicia te quiero",
+      "cover": "/img/dp.png",
+      "color": "#ffffff",
+      "lyrics": ""
+    },
+    {
+      "id": 16,
+      "path": "/mp3/itayatt.mp3",
+      "name": "i think about you all the time",
+      "artist": "Deftones",
+      "cover": "/img/privatemusic.png",
+      "color": "#00e01e",
+      "lyrics": ""
+    },
+    {
+      "id": 17,
+      "path": "/mp3/lp.mp3",
+      "name": "little person",
+      "artist": "Matt Maltese",
+      "cover": "/img/madhouse.png",
+      "color": "#748a73",
+      "lyrics": ""
+    },
+    {
+      "id": 18,
+      "path": "/mp3/tty.mp3",
+      "name": "Talk to You",
+      "artist": "Ricky Montgomery",
+      "cover": "/img/edits.png",
+      "color": "#6a7c5b",
+      "lyrics": ""
+    },
+    {
+      "id": 19,
+      "path": "/mp3/mme.mp3",
+      "name": "Ma Meilleure Ennemie",
+      "artist": "Stromae, Pomme, Arcane",
+      "cover": "/img/arcanebro.png",
+      "color": "#163a6a",
+      "lyrics": ""
+    },
+    {
+      "id": 20,
+      "path": "/mp3/iwby.mp3",
+      "name": "I Wanna Be Yours",
+      "artist": "Arctic Monkeys",
+      "cover": "/img/am.png",
+      "color": "#ffffffff",
+      "lyrics": ""
+    },
+    {
+      "id": 21,
+      "path": "/mp3/stwiwgowy.mp3",
+      "name": "Stop The World I Wanna Get Off With You",
+      "artist": "Arctic Monkeys",
+      "cover": "/img/wyocmwyh.png",
+      "color": "#fdfdfdff",
+      "lyrics": ""
+    },
+    {
+      "id": 22,
+      "path": "/mp3/diamondeyes.mp3",
+      "name": "Diamond Eyes",
+      "artist": "Deftones",
+      "cover": "/img/diamondeyes.png",
+      "color": "#a5a5a5",
+      "lyrics": ""
+    },
+    {
+      "id": 23,
+      "path": "/mp3/royal.mp3",
+      "name": "Royal",
+      "artist": "Deftones",
+      "cover": "/img/diamondeyes.png",
+      "color": "#a5a5a5",
+      "lyrics": ""
+    },
+    {
+      "id": 24,
+      "path": "/mp3/glitter.mp3",
+      "name": "glitter☆·.˚",
+      "artist": "lexycat",
+      "cover": "/img/glitter.png",
+      "color": "#f7b2c5",
+      "lyrics": ""
+    },
+    {
+      "id": 25,
+      "path": "/mp3/care.mp3",
+      "name": "Care",
+      "artist": "Clark Rainbow",
+      "cover": "/img/care.png",
+      "color": "#eeeebcff",
+      "lyrics": ""
+    },
+    {
+      "id": 26,
+      "path": "/mp3/guylikeyou.mp3",
+      "name": "guy like you",
+      "artist": "Yazida",
+      "cover": "/img/musthave.png",
+      "color": "#f098b6",
+      "lyrics": ""
+    },
+    {
+      "id": 27,
+      "path": "/mp3/supersonic.mp3",
+      "name": "SUPERSONIC",
+      "artist": "berryblue",
+      "cover": "/img/supersonic.png",
+      "color": "#4f5a5c",
+      "lyrics": ""
+    },
+    {
+      "id": 28,
+      "path": "/mp3/inamood.mp3",
+      "name": "IN A MOOD",
+      "artist": "berryblue",
+      "cover": "/img/gotmelike.png",
+      "color": "#e39d93",
+      "lyrics": ""
+    },
+    {
+      "id": 29,
+      "path": "/mp3/ringringring.mp3",
+      "name": "Ring Ring Ring",
+      "artist": "Tyler, The Creator",
+      "cover": "/img/dttg.png",
+      "color": "#ac3227",
+      "lyrics": ""
+    },
+    {
+      "id": 30,
+      "path": "/mp3/frontin.mp3",
+      "name": "Frontin' (feat. JAY-Z) - Club Mix",
+      "artist": "Pharrell Williams, JAY-Z",
+      "cover": "/img/tnpclones.png",
+      "color": "#5f87bbff",
+      "lyrics": ""
+    },
+    {
+      "id": 31,
+      "path": "/mp3/ryb.mp3",
+      "name": "Rock Your Body",
+      "artist": "Justin Timberlake",
+      "cover": "/img/justified.png",
+      "color": "#657aa0ff",
+      "lyrics": ""
+    },
+    {
+      "id": 32,
+      "path": "/mp3/rumine.mp3",
+      "name": "R U Mine?",
+      "artist": "Arctic Monkeys",
+      "cover": "/img/am.png",
+      "color": "#ffffffff",
+      "lyrics": ""
+    },
+    {
+      "id": 33,
+      "path": "/mp3/rosemary.mp3",
+      "name": "Rosemary",
+      "artist": "Deftones",
+      "cover": "/img/koinoyokan.png",
+      "color": "#c42e00ff",
+      "lyrics": ""
+    },
+    {
+      "id": 34,
+      "path": "/mp3/ginkgo.mp3",
+      "name": "Ginkgo",
+      "artist": "Panchiko",
+      "cover": "/img/ginkgo.png",
+      "color": "#89d2ecff",
+      "lyrics": ""
+    },
+    {
+      "id": 35,
+      "path": "/mp3/ald.mp3",
+      "name": "A Little Death",
+      "artist": "The Neighbourhood",
+      "cover": "/img/thankyou.png",
+      "color": "#d9d9d9",
+      "lyrics": ""
+    },
+    {
+      "id": 36,
+      "path": "/mp3/smile.mp3",
+      "name": "Smile",
+      "artist": "Deftones",
+      "cover": "/img/smile.png",
+      "color": "#9037d8",
+      "lyrics": ""
+    },
+    {
+      "id": 37,
+      "path": "/mp3/never.mp3",
+      "name": "Never",
+      "artist": "Mag.Lo, O Super",
+      "cover": "/img/never.png",
+      "color": "#e4e4e4",
+      "lyrics": ""
+    },
+    {
+      "id": 38,
+      "path": "/mp3/mmiam.mp3",
+      "name": "my mind is a mountain",
+      "artist": "Deftones",
+      "cover": "/img/privatemusic.png",
+      "color": "#00e01e",
+      "lyrics": ""
+    },
+    {
+      "id": 39,
+      "path": "/mp3/ohms.mp3",
+      "name": "Ohms",
+      "artist": "Deftones",
+      "cover": "/img/ohms.png",
+      "color": "#4d4d4d",
+      "lyrics": ""
+    },
+    {
+      "id": 40,
+      "path": "/mp3/killshot.mp3",
+      "name": "Killshot",
+      "artist": "Magdalena Bay",
+      "cover": "/img/killshot.png",
+      "color": "#3d4b3b",
+      "lyrics": ""
+    },
+    {
+      "id": 41,
+      "path": "/mp3/lytte.mp3",
+      "name": "Love You to the End",
+      "artist": "And One, Naghavi, Steve",
+      "cover": "/img/bodypop.png",
+      "color": "#f7941d",
+      "lyrics": ""
+    },
+    {
+      "id": 42,
+      "path": "/mp3/flawless.mp3",
+      "name": "Flawless",
+      "artist": "The Neighbourhood",
+      "cover": "/img/iloveyou.png",
+      "color": "#8a8a8a",
+      "lyrics": ""
+    },
+    {
+      "id": 43,
+      "path": "/mp3/lbl.mp3",
+      "name": "Little by Little",
+      "artist": "The Marías",
+      "cover": "/img/cinema.png",
+      "color": "#9d2925",
+      "lyrics": ""
+    },
+    {
+      "id": 44,
+      "path": "/mp3/lial.mp3",
+      "name": "Love is a Laserquest",
+      "artist": "Arctic Monkeys",
+      "cover": "/img/suckitandsee.png",
+      "color": "#f2e4c4",
+      "lyrics": ""
+    },
+    {
+      "id": 45,
+      "path": "/mp3/paula.mp3",
+      "name": "Paula",
+      "artist": "Zoé",
+      "cover": "/img/mrcyelcadlvl.png",
+      "color": "#ff0099",
+      "lyrics": ""
+    },
+    {
+      "id": 46,
+      "path": "/mp3/eay.mp3",
+      "name": "Everyone Adores You (at least I do)",
+      "artist": "Matt Maltese",
+      "cover": "/img/gmint.png",
+      "color": "#354e4c",
+      "lyrics": ""
+    },
+    {
+      "id": 47,
+      "path": "/mp3/dnpi.mp3",
+      "name": "Donde Nadie Pueda Ir",
+      "artist": "Manuel Medrano",
+      "cover": "/img/manuelmedrano.png",
+      "color": "#513068ff",
+      "lyrics": ""
+    },
+    {
+      "id": 48,
+      "path": "/mp3/likeyoudo.mp3",
+      "name": "Like You Do",
+      "artist": "Joji",
+      "cover": "/img/nectar.png",
+      "color": "#8f0c00ff",
+      "lyrics": ""
+    },
+    {
+      "id": 49,
+      "path": "/mp3/cicyt.mp3",
+      "name": "Can I Call You Tonight?",
+      "artist": "Dayglow",
+      "cover": "/img/fuzzybrain.png",
+      "color": "#7cb1c4",
+      "lyrics": ""
+    },
+    {
+      "id": 50,
+      "path": "/mp3/ca.mp3",
+      "name": "Cien Años",
+      "artist": "Paté de Fuá",
+      "cover": "/img/amoresajenos.png",
+      "color": "#ad8e65",
+      "lyrics": ""
+    },
+    {
+      "id": 51,
+      "path": "/mp3/vacio.mp3",
+      "name": "El Vacío - Noches de Salón",
+      "artist": "Enjambre",
+      "cover": "/img/nochesdesalon.png",
+      "color": "#8b201a",
+      "lyrics": ""
+    },
+    {
+      "id": 52,
+      "path": "/mp3/losimanes.mp3",
+      "name": "Los Imanes",
+      "artist": "Odisseo",
+      "cover": "/img/cambioestacional.png",
+      "color": "#3a4c8a",
+      "lyrics": ""
+    },
+    {
+      "id": 53,
+      "path": "/mp3/tlw.mp3",
+      "name": "True Love Waits",
+      "artist": "Radiohead",
+      "cover": "/img/amoonshapedpool.png",
+      "color": "#d0d0d0",
+      "lyrics": ""
+    },
+    {
+      "id": 54,
+      "path": "/mp3/quierover.mp3",
+      "name": "Quiero Ver",
+      "artist": "Café Tacvba",
+      "cover": "/img/sino.png",
+      "color": "#a9a9a9",
+      "lyrics": ""
+    },
+    {
+      "id": 55,
+      "path": "/mp3/1amfreestyle.mp3",
+      "name": "1AM FREESTYLE",
+      "artist": "Joji",
+      "cover": "/img/smithereens.png",
+      "color": "#5c798a",
+      "lyrics": ""
+    },
+    {
+      "id": 56,
+      "path": "/mp3/cfy.mp3",
+      "name": "Care For You",
+      "artist": "The Marías",
+      "cover": "/img/careforyou.png",
+      "color": "#ffffffff",
+      "lyrics": ""
+    },
+    {
+      "id": 57,
+      "path": "/mp3/otm.mp3",
+      "name": "Over the Moon",
+      "artist": "The Marías",
+      "cover": "/img/superclean.png",
+      "color": "#ac0000ff",
+      "lyrics": ""
+    },
+    {
+      "id": 58,
+      "path": "/mp3/pr.mp3",
+      "name": "Purple Rain",
+      "artist": "Prince",
+      "cover": "/img/purplerain.png",
+      "color": "#4f2b6e",
+      "lyrics": ""
+    },
+    {
+      "id": 59,
+      "path": "/mp3/miy.mp3",
+      "name": "Maybe It's You",
+      "artist": "Pump Action",
+      "cover": "/img/maybeitsyou.png",
+      "color": "#8abcc4",
+      "lyrics": ""
+    },
+    {
+      "id": 60,
+      "path": "/mp3/disco.mp3",
+      "name": "Disco",
+      "artist": "Surf Curse",
+      "cover": "/img/disc.png",
+      "color": "#30568c",
+      "lyrics": ""
+    },
+    {
+      "id": 61,
+      "path": "/mp3/comotu.mp3",
+      "name": "Como Tú (Magic Music Box)",
+      "artist": "León Larregui",
+      "cover": "/img/solstis.png",
+      "color": "#6a6a6a",
+      "lyrics": ""
+    },
+    {
+      "id": 62,
+      "path": "/mp3/carmin.mp3",
+      "name": "Carmín",
+      "artist": "León Larregui",
+      "cover": "/img/solstis.png",
+      "color": "#6a6a6a",
+      "lyrics": ""
+    },
+    {
+      "id": 63,
+      "path": "/mp3/lanovela.mp3",
+      "name": "La Novela",
+      "artist": "boy pablo, Cuco",
+      "cover": "/img/lanovela.png",
+      "color": "#e8a46b",
+      "lyrics": ""
+    },
+    {
+      "id": 64,
+      "path": "/mp3/fl.mp3",
+      "name": "Frances Limon",
+      "artist": "Los Enanitos Verdes",
+      "cover": "/img/loqueelrocknosdejo.png",
+      "color": "#944444ff",
+      "lyrics": ""
+    },
+    {
+      "id": 65,
+      "path": "/mp3/vivos.mp3",
+      "name": "Vivos",
+      "artist": "Enjambre",
+      "cover": "/img/vivos.png",
+      "color": "#d66928",
+      "lyrics": ""
+    },
+    {
+      "id": 66,
+      "path": "/mp3/visita.mp3",
+      "name": "Visita - Noches de Salón",
+      "artist": "Enjambre",
+      "cover": "/img/nochesdesalon.png",
+      "color": "#8b201a",
+      "lyrics": ""
+    },
+    {
+      "id": 67,
+      "path": "/mp3/allineed.mp3",
+      "name": "All I Need",
+      "artist": "Radiohead",
+      "cover": "/img/inrainbows.png",
+      "color": "#c05c19ff",
+      "lyrics": ""
+    },
+    {
+      "id": 68,
+      "path": "/mp3/rxqueen.mp3",
+      "name": "Rx Queen",
+      "artist": "Deftones",
+      "cover": "/img/whitepony.png",
+      "color": "#e8e8e8",
+      "lyrics": ""
+    },
+    {
+      "id": 69,
+      "path": "/mp3/gauze.mp3",
+      "name": "Gauze",
+      "artist": "Deftones",
+      "cover": "/img/koinoyokan.png",
+      "color": "#c42e00ff",
+      "lyrics": ""
+    },
+    {
+      "id": 70,
+      "path": "/mp3/bs.mp3",
+      "name": "Beauty School",
+      "artist": "Deftones",
+      "cover": "/img/diamondeyes.png",
+      "color": "#a5a5a5",
+      "lyrics": ""
+    },
+    {
+      "id": 71,
+      "path": "/mp3/reflections.mp3",
+      "name": "Reflections",
+      "artist": "The Neighbourhood",
+      "cover": "/img/htitnec.png",
+      "color": "#c6bca8",
+      "lyrics": ""
+    },
+    {
+      "id": 72,
+      "path": "/mp3/glasseyes.mp3",
+      "name": "Glass Eyes",
+      "artist": "Radiohead",
+      "cover": "/img/amoonshapedpool.png",
+      "color": "#d0d0d0",
+      "lyrics": ""
+    },
+    {
+      "id": 73,
+      "path": "/mp3/thca.mp3",
+      "name": "Time Has Come Again",
+      "artist": "The Last Shadow Puppets, Alex Turner, Miles Kane",
+      "cover": "/img/taotu.png",
+      "color": "#862c2cff",
+      "lyrics": ""
+    },
+    {
+      "id": 74,
+      "path": "/mp3/oma.mp3",
+      "name": "Oh My Angel",
+      "artist": "Bertha Tillman",
+      "cover": "/img/pberthatillman.png",
+      "color": "#d85da9ff",
+      "lyrics": ""
+    },
+    {
+      "id": 75,
+      "path": "/mp3/cifcik.mp3",
+      "name": "Call It Fate, Call It Karma",
+      "artist": "The Strokes",
+      "cover": "/img/comedownmachine.png",
+      "color": "#cc3e2c",
+      "lyrics": ""
+    },
+    {
+      "id": 76,
+      "path": "/mp3/pm.mp3",
+      "name": "Pink Matter",
+      "artist": "Frank Ocean, André 3000",
+      "cover": "/img/channelorange.png",
+      "color": "#e87b28",
+      "lyrics": ""
+    },
+    {
+      "id": 77,
+      "path": "/mp3/st.mp3",
+      "name": "She's Thunderstorms",
+      "artist": "Arctic Monkeys",
+      "cover": "/img/suckitandsee.png",
+      "color": "#f2e4c4",
+      "lyrics": ""
+    },
+    {
+      "id": 78,
+      "path": "/mp3/ld.mp3",
+      "name": "La Diferencia",
+      "artist": "Enjambre",
+      "cover": "/img/ladiferencia.png",
+      "color": "#3c86b4",
+      "lyrics": ""
+    },
+    {
+      "id": 79,
+      "path": "/mp3/elemento.mp3",
+      "name": "Elemento - Noches de Salón",
+      "artist": "Enjambre",
+      "cover": "/img/nochesdesalon.png",
+      "color": "#8b201a",
+      "lyrics": ""
+    },
+    {
+      "id": 80,
+      "path": "/mp3/jupiter.mp3",
+      "name": "Jupiter",
+      "artist": "Matt Maltese",
+      "cover": "/img/krystal.png",
+      "color": "#a88e7b",
+      "lyrics": ""
+    },
+    {
+      "id": 81,
+      "path": "/mp3/iloveyou.mp3",
+      "name": "I Love You",
+      "artist": "Woodkid",
+      "cover": "/img/thegoldenage.png",
+      "color": "#d0d0d0",
+      "lyrics": ""
+    },
+    {
+      "id": 82,
+      "path": "/mp3/theultracheese.mp3",
+      "name": "The Ultracheese",
+      "artist": "Arctic Monkeys",
+      "cover": "/img/tranquilitybasehotelandcasino.png",
+      "color": "#917a5dff",
+      "lyrics": ""
+    },
+    {
+      "id": 83,
+      "path": "/mp3/pinkwhite.mp3",
+      "name": "Pink + White",
+      "artist": "Frank Ocean",
+      "cover": "/img/blond.png",
+      "color": "#85b58fff",
+      "lyrics": ""
+    },
+    {
+      "id": 84,
+      "path": "/mp3/mwol.mp3",
+      "name": "My Way Of Life",
+      "artist": "Frank Sinatra",
+      "cover": "/img/cycles.png",
+      "color": "#2d4454",
+      "lyrics": ""
+    },
+    {
+      "id": 85,
+      "path": "/mp3/gh.mp3",
+      "name": "Geometric Headdress",
+      "artist": "Deftones",
+      "cover": "/img/gore.png",
+      "color": "#5e6978",
+      "lyrics": ""
+    },
+    {
+      "id": 86,
+      "path": "/mp3/risk.mp3",
+      "name": "Risk",
+      "artist": "Deftones",
+      "cover": "/img/diamondeyes.png",
+      "color": "#a5a5a5",
+      "lyrics": ""
+    },
+    {
+      "id": 87,
+      "path": "/mp3/entombed.mp3",
+      "name": "Entombed",
+      "artist": "Deftones",
+      "cover": "/img/koinoyokan.png",
+      "color": "#c42e00ff",
+      "lyrics": ""
+    },
+    {
+      "id": 88,
+      "path": "/mp3/mar.mp3",
+      "name": "Mar",
+      "artist": "León Larregui",
+      "cover": "/img/voluma.png",
+      "color": "#6a7b8e",
+      "lyrics": ""
+    },
+    {
+      "id": 89,
+      "path": "/mp3/siempretu.mp3",
+      "name": "Siempre Tú",
+      "artist": "Enjambre",
+      "cover": "/img/proximosprojimos.png",
+      "color": "#366a8c",
+      "lyrics": ""
+    },
+    {
+      "id": 90,
+      "path": "/mp3/lisa.mp3",
+      "name": "Lisa",
+      "artist": "Gustavo Cerati",
+      "cover": "/img/amoramarillo.png",
+      "color": "#f8e030",
+      "lyrics": ""
+    },
+    {
+      "id": 91,
+      "path": "/mp3/lainnombrable.mp3",
+      "name": "La Innombrable",
+      "artist": "Julius Popper",
+      "cover": "/img/juliuspopper.png",
+      "color": "#d0b07a",
+      "lyrics": ""
+    },
+    {
+      "id": 92,
+      "path": "/mp3/amores.mp3",
+      "name": "Amores",
+      "artist": "Nova Club, Azul de Viena",
+      "cover": "/img/amores.png",
+      "color": "#a874a8",
+      "lyrics": ""
+    },
+    {
+      "id": 93,
+      "path": "/mp3/2o00s.mp3",
+      "name": "2o00s!",
+      "artist": "White MJ, Juanki",
+      "cover": "/img/2o00s.png",
+      "color": "#e8a49c",
+      "lyrics": ""
+    },
+    {
+      "id": 94,
+      "path": "/mp3/etatle.mp3",
+      "name": "el tiempo a tu lado es ?!?!",
+      "artist": "White MJ",
+      "cover": "/img/nomeprestesatencion.png",
+      "color": "#2a2a2a",
+      "lyrics": ""
+    },
+    {
+      "id": 95,
+      "path": "/mp3/genesis.mp3",
+      "name": "Genesis",
+      "artist": "Deftones",
+      "cover": "/img/gore.png",
+      "color": "#5e6978",
+      "lyrics": ""
+    },
+    {
+      "id": 96,
+      "path": "/mp3/leathers.mp3",
+      "name": "Leathers",
+      "artist": "Deftones",
+      "cover": "/img/koinoyokan.png",
+      "color": "#c42e00ff",
+      "lyrics": ""
+    },
+    {
+      "id": 97,
+      "path": "/mp3/sc.mp3",
+      "name": "Swerve City",
+      "artist": "Deftones",
+      "cover": "/img/koinoyokan.png",
+      "color": "#f2e4c4",
+      "lyrics": ""
+    }
+  ]
+}
